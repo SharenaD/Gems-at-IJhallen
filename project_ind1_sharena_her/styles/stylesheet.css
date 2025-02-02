@@ -1,0 +1,226 @@
+*, :after, :before {
+    font-family: "Varela Round", serif;
+    font-weight: 500;
+    font-style: normal;
+    box-sizing: inherit;
+    margin: 0;
+}
+
+:root {
+	--achtergrond: rgb(210 225 228);
+	--red: rgb(170 68 94);
+	--darkblue: rgb(52 76 92);
+	--musterd: rgb(182 160 76);
+}
+
+.logo {
+    float: left;
+    width: 30%;
+    margin-left: 4em;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    float: right;
+}
+
+section img {
+    float: left;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-last-of-type(odd) img{
+    float: right;
+}
+
+body {
+    background: var(--achtergrond);
+}
+
+
+/* header */
+header {
+	padding: 1em 2em;
+	border-bottom: 8px solid var(--musterd);
+	position: sticky;
+    background:var(--darkblue);
+	top:0; 
+	z-index: 3;
+}
+
+header nav{
+	display:flex;
+	justify-content: space-between;
+}
+
+header nav img {
+	width: 15%;
+}
+
+/* tekstvlakken */
+main section {
+	border-radius: 7em;
+	overflow: hidden;
+	margin: 4em;
+    border-radius: 4em;
+    padding: 1.5em 1.5em 2.5em;
+}
+main section {
+    color: var(--achtergrond);
+}
+
+main section:nth-of-type(even) {
+	background-color: var(--musterd);
+}
+
+main section:nth-of-type(even) h2 {
+    color: var(--darkblue)
+}
+  
+main section:nth-of-type(odd) {
+	background-color: var(--darkblue);
+}
+
+main section:nth-of-type(odd) h2 {
+    color: var(--musterd)
+}
+
+main section:first-of-type {
+	background-color: var(--red);
+}
+
+main section:first-of-type h2 {
+    color: var(--musterd)
+}    
+
+
+/* buttons */
+main section a{
+	display: flex;
+	justify-content: center;
+    text-align: center;
+	text-decoration: none;
+	font-size: 3em;
+	padding: 1em;
+	border-radius: 2em;
+    margin-bottom: 1em;
+    margin-top: 3.9em;
+    color: var(--achtergrond);
+}  
+
+main section:nth-of-type(even) a{
+	background-color: var(--darkblue);
+}
+
+main section:nth-of-type(odd) a{
+	background-color: var(--musterd);
+}
+
+main section p{
+	font-size: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+/* Voor het onderstaande gedeelte heb ik chatgpt 
+geraadpleegd, ik heb het niet letterlijk overgenomen 
+maar gevraagd naar manieren om een onzichtbare button
+te plaatsen */
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.wat-te-doen {
+    top: 40%; 
+    left: 10%; 
+    width: 40%; 
+    height: 15%; 
+}
+
+.duurzaamheid {
+    top: 27%; 
+    right: 5%; 
+    width: 40%; 
+    height: 15%; 
+}
+
+.data-locatie {
+    top: 55%; 
+    right: 5%; 
+    width: 40%; 
+    height: 15%; 
+}
+
+/* tot hier */
+
+
+h1 {
+    font-family: "DynaPuff", system-ui;
+    color: var(--darkblue);
+    display: flex;
+    font-size: 7em;
+    margin-top: .4em;
+    margin-bottom: 1em;
+}   
+
+h2 {
+    font-family: "DynaPuff", system-ui;
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    padding-top: 1%;
+    margin: 5%;
+    font-weight: bolder;
+}
+
+h3 {
+    font-family: "DynaPuff", system-ui;
+    color: var(--darkblue);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    margin: 2.5em;
+} 
+
+main p {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+footer {
+	background-color: var(--darkblue);
+	padding-bottom: 1em;
+}
+
+footer p {
+    color: var(--achtergrond);
+    font-size: 2em;
+    padding: 1em;
+}
