@@ -32,6 +32,10 @@
     align-items: center;
 }
 
+.home {
+    float: right;
+}
+
 section img {
     float: left;
     width: 40%;
